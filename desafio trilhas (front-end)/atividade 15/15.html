@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de Números</title>
+    <script>
+        function somarNumeros(numero1, numero2) {
+            return numero1 + numero2;
+        }
+
+        function exibirResultado(resultado) {
+            console.log("O resultado da soma é: " + resultado);
+        }
+
+        function executarSoma() {
+            const primeiroNumero = 10;
+            const segundoNumero = 20;
+            const resultado = somarNumeros(primeiroNumero, segundoNumero);
+            exibirResultado(resultado);
+        }
+
+        window.onload = executarSoma;
+    </script>
+</head>
+<body>
+</body>
+</html>

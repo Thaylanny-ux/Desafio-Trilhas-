@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparação de Números</title>
+    <script>
+        function compararNumeros() {
+            let numero1 = parseFloat(prompt("Digite o primeiro número:"));
+            let numero2 = parseFloat(prompt("Digite o segundo número:"));
+
+            if (isNaN(numero1) || isNaN(numero2)) {
+                alert("Por favor, insira valores numéricos válidos.");
+            } else if (numero1 === numero2) {
+                alert("Os números são iguais.");
+            } else {
+                alert("Os números são diferentes.");
+            }
+        }
+    </script>
+</head>
+<body onload="compararNumeros()">
+</body>
+</html>

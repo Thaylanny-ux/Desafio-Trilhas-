@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo da Área do Círculo</title>
+    <script>
+        function calcularAreaDoCirculo(raio) {
+            return Math.PI * Math.pow(raio, 2);
+        }
+
+        function solicitarRaioEExibirArea() {
+            const raio = parseFloat(prompt("Digite o valor do raio do círculo:"));
+            if (isNaN(raio) || raio <= 0) {
+                alert("Por favor, insira um valor numérico válido para o raio.");
+            } else {
+                const area = calcularAreaDoCirculo(raio);
+                alert(`A área do círculo com raio ${raio} é: ${area.toFixed(2)}`);
+            }
+        }
+    </script>
+</head>
+<body onload="solicitarRaioEExibirArea()">
+</body>
+</html>

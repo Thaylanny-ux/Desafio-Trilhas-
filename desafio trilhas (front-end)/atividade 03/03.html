@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Desconto</title>
+    <script>
+        function calcularDesconto() {
+            let preco = parseFloat(prompt("Digite o preço do produto:"));
+            let desconto = parseFloat(prompt("Digite o desconto (em decimal, ex: 0.2 para 20%):"));
+
+            if (isNaN(preco) || isNaN(desconto)) {
+                alert("Por favor, insira valores numéricos válidos.");
+            } else {
+                let precoFinal = preco - (preco * desconto);
+                alert("O preço final com desconto é: R$ " + precoFinal.toFixed(2));
+            }
+        }
+    </script>
+</head>
+<body onload="calcularDesconto()">
+</body>
+</html>

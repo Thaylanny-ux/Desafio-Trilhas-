@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Temperatura</title>
+    <script>
+        function verificarTemperatura() {
+            const temperatura = parseFloat(prompt("Digite a temperatura:"));
+            if (isNaN(temperatura)) {
+                alert("Por favor, insira um valor numérico válido.");
+            } else {
+                const mensagem = temperatura > 25 ? "Está calor!" : "Está fresco!";
+                alert(mensagem);
+            }
+        }
+    </script>
+</head>
+<body onload="verificarTemperatura()">
+</body>
+</html>
